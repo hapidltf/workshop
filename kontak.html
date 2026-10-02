@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kontak | HIMATIF UNTIDAR</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/14. LOGO HIMATIF.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <header id="navbar">
+      <nav class="dock">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+          <img src="assets/14. LOGO HIMATIF.png" alt="Logo HMTI UNTIDAR" />
+
+          <div>
+            <h3>HIMATIF UNTIDAR</h3>
+            <span>Himpunan Mahasiswa Teknologi Informasi</span>
+          </div>
+        </a>
+
+        <!-- NAVIGATION -->
+        <ul class="nav-menu">
+          <li>
+            <a href="index.html" class="nav-link">
+              <i class="fa-solid fa-house"></i>
+              <span>Beranda</span>
+            </a>
+          </li>
+
+          <!-- PROFIL -->
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Profil</span>
+              <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html#tentang"> Tentang HIMATIF </a>
+              </li>
+
+              <li>
+                <a href="#" id="visionMissionNav"> Visi & Misi </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- STRUKTUR -->
+          <li>
+            <a href="index.html#struktur" class="nav-link">
+              <i class="fa-solid fa-sitemap"></i>
+              <span>Struktur</span>
+            </a>
+          </li>
+
+          <!-- DIVISI -->
+          <li>
+            <a href="divisi.html" class="nav-link">
+              <i class="fa-solid fa-users"></i>
+              <span>Divisi</span>
+            </a>
+          </li>
+
+          <!-- BERITA -->
+          <li>
+            <a href="index.html#berita" class="nav-link">
+              <i class="fa-solid fa-newspaper"></i>
+              <span>Berita</span>
+            </a>
+          </li>
+
+          <!-- GALERI -->
+          <li>
+            <a href="index.html#galeri" class="nav-link">
+              <i class="fa-solid fa-images"></i>
+              <span>Galeri</span>
+            </a>
+          </li>
+
+          <!-- KONTAK -->
+          <li>
+            <a href="kontak.html" class="nav-link active">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Kontak</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- HAMBURGER -->
+        <button
+          type="button"
+          class="hamburger"
+          id="hamburger"
+          aria-label="Buka menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ==========================================
+         CONTACT HERO
+    =========================================== -->
+
+    <main>
+      <!-- ==========================================
+             CONTACT SECTION
+        =========================================== -->
+
+      <section class="contact-section">
+        <div class="contact-container">
+          <!-- HEADING -->
+
+          <div class="section-heading contact-heading reveal">
+            <span class="section-number"> 01 / HUBUNGI KAMI </span>
+
+            <h2>
+              Let's talk
+              <span>together.</span>
+            </h2>
+
+            <p>
+              Punya pertanyaan, saran, atau ingin berkolaborasi dengan HIMATIF
+              UNTIDAR? Sampaikan pesanmu melalui formulir berikut.
+            </p>
+          </div>
+
+          <!-- CONTACT WRAPPER -->
+
+          <div class="contact-wrapper">
+            <!-- ==================================
+                         FORM
+                    =================================== -->
+
+            <div class="contact-form-card reveal-left">
+              <div class="contact-card-heading">
+                <span class="contact-card-number"> 01 </span>
+
+                <div>
+                  <span class="contact-card-label"> SEND A MESSAGE </span>
+
+                  <h3>Sampaikan pesanmu.</h3>
+                </div>
+              </div>
+
+              <form id="contactForm">
+                <!-- NAMA -->
+
+                <div class="form-group">
+                  <label for="contactName"> Nama Lengkap </label>
+
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user"></i>
+
+                    <input
+                      type="text"
+                      id="contactName"
+                      name="name"
+                      placeholder="Masukkan nama lengkap"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+
+                  <small class="form-error" id="nameError"></small>
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+                  <label for="contactEmail"> Email </label>
+
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                      type="email"
+                      id="contactEmail"
+                      name="email"
+                      placeholder="nama@email.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+
+                  <small class="form-error" id="emailError"></small>
+                </div>
+
+                <!-- SUBJEK -->
+
+                <div class="form-group">
+                  <label for="contactSubject"> Subjek </label>
+
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag"></i>
+
+                    <input
+                      type="text"
+                      id="contactSubject"
+                      name="subject"
+                      placeholder="Contoh: Kerja sama organisasi"
+                      required
+                    />
+                  </div>
+
+                  <small class="form-error" id="subjectError"></small>
+                </div>
+
+                <!-- PESAN -->
+
+                <div class="form-group">
+                  <label for="contactMessage"> Pesan </label>
+
+                  <div class="textarea-wrapper">
+                    <i class="fa-regular fa-message"></i>
+
+                    <textarea
+                      id="contactMessage"
+                      name="message"
+                      rows="6"
+                      placeholder="Tulis pesan yang ingin disampaikan..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <small class="form-error" id="messageError"></small>
+                </div>
+
+                <!-- STATUS -->
+
+                <div class="form-status" id="formStatus"></div>
+
+                <!-- BUTTON -->
+
+                <button type="submit" class="contact-submit">
+                  <span> Kirim Pesan </span>
+
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+
+            <!-- ==================================
+                         CONTACT INFORMATION
+                    =================================== -->
+
+            <aside class="contact-info-card reveal-right">
+              <div class="contact-info-top">
+                <span class="contact-card-number"> 02 </span>
+
+                <span class="contact-card-label"> CONTACT INFORMATION </span>
+
+                <h3>Temukan kami.</h3>
+
+                <p>
+                  Ikuti media sosial dan gunakan informasi di bawah ini untuk
+                  terhubung dengan HIMATIF UNTIDAR.
+                </p>
+              </div>
+
+              <!-- LOCATION -->
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                  <span> LOCATION </span>
+
+                  <h4>Universitas Tidar</h4>
+
+                  <p>Magelang, Jawa Tengah</p>
+                </div>
+              </div>
+
+              <!-- EMAIL -->
+
+              <a
+                href="mailto:hmti@untidar.ac.id"
+                class="contact-info-item contact-info-link"
+              >
+                <div class="contact-info-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div>
+                  <span> EMAIL </span>
+
+                  <h4>HIMATIF@untidar.ac.id</h4>
+
+                  <p>Kirim email kepada kami</p>
+                </div>
+
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-external"
+                ></i>
+              </a>
+
+              <!-- INSTAGRAM -->
+
+              <a
+                href="#"
+                class="contact-info-item contact-info-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="contact-info-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div>
+                  <span> INSTAGRAM </span>
+
+                  <h4>@hmti_untidar</h4>
+
+                  <p>Ikuti kegiatan terbaru kami</p>
+                </div>
+
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-external"
+                ></i>
+              </a>
+
+              <!-- WHATSAPP -->
+
+              <a
+                href="#"
+                class="contact-info-item contact-info-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="contact-info-icon">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+
+                <div>
+                  <span> WHATSAPP </span>
+
+                  <h4>Hubungi HIMATIF</h4>
+
+                  <p>Komunikasi langsung dengan kami</p>
+                </div>
+
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square contact-external"
+                ></i>
+              </a>
+
+              <!-- SOCIAL -->
+
+              <div class="contact-social">
+                <span> FOLLOW HIMATIF </span>
+
+                <div class="contact-social-links">
+                  <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+
+                  <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="site-footer">
+      <!-- =================================================
+         FOOTER MAIN
+    ================================================= -->
+
+      <div class="footer-main">
+        <div class="footer-container">
+          <!-- =================================================
+                 BRAND
+            ================================================= -->
+
+          <div class="footer-brand">
+            <a href="#beranda" class="footer-logo">
+              <img src="assets/14. LOGO HIMATIF.png" alt="Logo HMTI UNTIDAR" />
+
+              <div>
+                <h3>HIMATIF UNTIDAR</h3>
+
+                <span> Universitas Tidar </span>
+              </div>
+            </a>
+
+            <p class="footer-description">
+              Himpunan Mahasiswa Teknologi Informasi sebagai wadah mahasiswa
+              untuk berkembang, berkolaborasi, dan berkontribusi.
+            </p>
+
+            <!-- SOCIAL MEDIA -->
+
+            <div class="footer-social">
+              <a href="#" target="_blank" aria-label="Instagram HMTI">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" target="_blank" aria-label="TikTok HMTI">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+
+              <a href="#" target="_blank" aria-label="Email HMTI">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+
+              <a href="#" target="_blank" aria-label="WhatsApp HMTI">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 NAVIGASI
+            ================================================= -->
+
+          <div class="footer-column">
+            <h4>NAVIGASI</h4>
+
+            <ul>
+              <li>
+                <a href="#beranda"> Beranda </a>
+              </li>
+
+              <li>
+                <a href="#tentang"> Profil </a>
+              </li>
+
+              <li>
+                <a href="#struktur"> Struktur </a>
+              </li>
+
+              <li>
+                <a href="#berita"> Berita </a>
+              </li>
+
+              <li>
+                <a href="#galeri"> Galeri </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- =================================================
+                 ORGANISASI
+            ================================================= -->
+
+          <div class="footer-column">
+            <h4>ORGANISASI</h4>
+
+            <ul>
+              <li>
+                <a href="divisi.html"> Divisi </a>
+              </li>
+
+              <li>
+                <a href="#" id="footerVisionMission"> Visi &amp; Misi </a>
+              </li>
+
+              <li>
+                <a href="#struktur"> Kepengurusan </a>
+              </li>
+
+              <li>
+                <a href="#berita"> Program Kerja </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- =================================================
+                 KONTAK
+            ================================================= -->
+
+          <div class="footer-column footer-contact">
+            <h4>HUBUNGI KAMI</h4>
+
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>
+                Universitas Tidar<br />
+                Magelang, Jawa Tengah
+              </span>
+            </div>
+
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <a href="mailto:email@contoh.com"> email@contoh.com </a>
+            </div>
+
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-instagram"></i>
+
+              <a href="#" target="_blank"> @himatif.untidar </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+                  VISI & MISI MODAL
+            ========================================== -->
+
+      <div class="vision-modal" id="visionModal">
+        <div class="vision-modal-overlay"></div>
+
+        <div class="vision-modal-content">
+          <button
+            type="button"
+            class="vision-modal-close"
+            id="visionModalClose"
+            aria-label="Tutup Visi dan Misi"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="vision-modal-header">
+            <span>HIMATIF UNTIDAR</span>
+
+            <h2>Visi &amp; Misi</h2>
+
+            <p>
+              Visi dan misi Himpunan Mahasiswa Teknologi Informasi Universitas
+              Tidar.
+            </p>
+          </div>
+
+          <div class="vision-modal-images">
+            <div class="vision-image">
+              <span>MISI</span>
+
+              <img src="assets/13. MISI HIMATIF.png" alt="Misi HMTI UNTIDAR" />
+            </div>
+
+            <div class="vision-image">
+              <span>VISI</span>
+
+              <img src="assets/12. VISI HIMATIF.png" alt="Visi HMTI UNTIDAR" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================================================
+         FOOTER BOTTOM
+    ================================================= -->
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-container">
+          <p>
+            &copy;
+            <span id="footerYear"></span>
+            HIMATIF UNTIDAR. All rights reserved.
+          </p>
+
+          <span class="footer-university"> Universitas Tidar </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
